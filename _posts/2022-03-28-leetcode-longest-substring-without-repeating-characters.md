@@ -21,12 +21,6 @@ leetcode:
 ---
 문자열 `s` 가 주어졌을 때 겹치는 문자가 없는 부분 문자열의 길이를 반환하라.
 
-## Problem,
-
-| **Difficulty** | _Medium_ |
-| **Language** | _Java_ |
-| **URL** | [https://leetcode.com/problems/longest-substring-without-repeating-characters/](https://leetcode.com/problems/longest-substring-without-repeating-characters/) |
-
 
 ## Solution,
 
