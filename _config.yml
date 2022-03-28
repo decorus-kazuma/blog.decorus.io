@@ -1,4 +1,6 @@
 remote_theme: samarsault/plainwhite-jekyll
+# theme: plainwhite
+
 title: decorus-kazuma's blog.
 author: decorus-kazuma
 email: brightdelusion@gmail.com
@@ -35,8 +37,6 @@ plainwhite:
     github: decorus-kazuma
     linkedIn: in/decorus-kazuma
     email: brightdelusion@gmail.com
-
-theme: plainwhite
 
 plugins:
   - jekyll-seo-tag
