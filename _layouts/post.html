@@ -19,9 +19,9 @@ layout: default
   </div>
   {%- if page.series -%}
   <div class="post-series" data-series-id="{{ page.series_id }}">
-    <h3 class="post-series-title">Series. {{ page.series | regex_replace: '^[A-z0-9]+-', '' }}</h3>
+    <h3 class="post-series-title"><span class="post-series-title-label">Series.</span> {{ page.series | regex_replace: '^[A-z0-9]+-', '' }}</h3>
     <div>
-    <ol>
+    <ol reversed>
       {%- for post in site.posts -%}
         {%- if post.series_id == page.series_id -%}
           <li>
@@ -34,6 +34,52 @@ layout: default
         {%- endif -%}
       {%- endfor -%}
     </ol>
+    </div>
+  </div>
+  {%- endif -%}
+  {%- if page.leetcode -%}
+  <div class="post-leetcode">
+    <div class="logo">
+      <div class="image">
+        <img src="{{ "/assets/leetcode.png" | relative_url }}" alt="leetcode-logo" />
+      </div>
+    </div>
+    <div class="detail">
+      <table>
+        <tbody>
+          <tr>
+            <th>
+              Problem
+            </th>
+            <td class="name">
+              <a target="_blank" href="https://leetcode.com/problems/{{ page.leetcode.id }}">{{ page.leetcode.name }}</a>
+            </td>
+          </tr>
+          <tr>
+            <th>
+              Difficulty
+            </th>
+            <td class="difficulty">
+              {% case page.leetcode.diff %}
+                {% when 1 %}
+                  <span class="easy">Easy</span>
+                {% when 2 %}
+                  <span class="medium">Medium</span>
+                {% when 3 %}
+                  <span class="hard">Hard</span>
+              {% endcase %}
+            </td>
+          </tr>
+          <tr>
+            <th>
+              Language
+            </th>
+            <td>
+              {{ page.leetcode.language }}
+            </td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   </div>
   {%- endif -%}

@@ -13,6 +13,11 @@ tags:
 - Algorithm
 - Leetcode
 - Sliding Window
+leetcode:
+  id: longest-substring-without-repeating-characters
+  name: Longest Substring Without Repeating Characters 
+  diff: 2
+  language: Java
 ---
 문자열 `s` 가 주어졌을 때 겹치는 문자가 없는 부분 문자열의 길이를 반환하라.
 

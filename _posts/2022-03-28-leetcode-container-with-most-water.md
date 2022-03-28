@@ -13,6 +13,11 @@ tags:
 - Algorithm
 - Leetcode
 - Two Pointer
+leetcode:
+  id: container-with-most-water
+  name: Container With Most Water
+  diff: 2
+  language: Java 
 ---
 You are given an integer array `height` of length `n`. There are `n` vertical lines drawn such that the two endpoints of the `ith` line are `(i, 0)` and `(i, height[i])`.
 
@@ -21,14 +26,6 @@ Find two lines that together with the x-axis form a container, such that the con
 Return *the maximum amount of water a container can store*.
 
 **Notice** that you may not slant the container.
-
-
-## Problem,
-
-| **Difficulty** | _Medium_ |
-| **Language** | _Java_ |
-| **URL** | https://leetcode.com/problems/container-with-most-water/ |
-
 
 ## Solution,
 
