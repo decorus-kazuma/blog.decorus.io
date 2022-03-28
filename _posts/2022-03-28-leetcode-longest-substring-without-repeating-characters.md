@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Leetcode - Longest Substring Without Repeating Charactes"
-date: 2022-03-28 20:12:00 0900
+date: 2022-03-28T20:12:00+09:00
 categories:
 - Algorithm
 - Leetcode

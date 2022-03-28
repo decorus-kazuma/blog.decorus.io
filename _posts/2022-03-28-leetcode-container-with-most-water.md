@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Leetcode - Container With Most Water"
-date: 2022-03-28 20:26:00 0900
+date: 2022-03-28T20:26:00+09:00
 categories:
 - Algorithm
 - Leetcode

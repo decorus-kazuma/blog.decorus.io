@@ -12,7 +12,7 @@ function toggleDarkMode() {
 
     let s = document.createElement( 'script' );
     s.setAttribute('src', 'https://utteranc.es/client.js');
-    s.setAttribute('repo', 'decorus-kazuma/decorus-kazuma.github.io');
+    s.setAttribute('repo', 'decorus-kazuma/blog.decorus.io');
     s.setAttribute('theme', `github-${getCookie("theme")}`);
     s.setAttribute('crossorigin', '"anonymous"');
     s.setAttribute('async', '')
