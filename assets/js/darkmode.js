@@ -9,6 +9,16 @@ function toggleDarkMode() {
         setCookie('theme', 'dark');
         body.classList.add(DARK_CLASS);
     }
+
+    let s = document.createElement( 'script' );
+    s.setAttribute('src', 'https://utteranc.es/client.js');
+    s.setAttribute('repo', 'decorus-kazuma/decorus-kazuma.github.io');
+    s.setAttribute('theme', `github-${getCookie("theme")}`);
+    s.setAttribute('crossorigin', '"anonymous"');
+    s.setAttribute('async', '')
+    s.setAttribute('issue-term', 'url');
+    document.getElementById('comment').innerHTML = '';
+    document.getElementById('comment').appendChild(s);
 }
 
 function getCookie(name) {

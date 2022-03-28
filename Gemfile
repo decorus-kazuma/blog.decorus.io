@@ -2,3 +2,6 @@
 
 source "https://rubygems.org"
 gemspec
+gem "plainwhite"
+gem 'jekyll-feed'
+gem 'jekyll-regex-replace'

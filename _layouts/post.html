@@ -5,6 +5,7 @@ layout: default
 <div class="post-container">
   <a class="post-link" href="{{ page.url | relative_url }}">
     <h2 class="post-title">{{ page.title | escape }}</h2>
+    <h4>{{ page.description | escape }}</h4>
   </a>
   <div class="post-meta">
     <div class="post-date"><i class="icon-calendar"></i>{{ page.date | date: date_format }}</div>
@@ -16,8 +17,48 @@ layout: default
     </ul>
     {%- endif -%}
   </div>
+  {%- if page.series -%}
+  <div class="post-series">
+    <h3 class="post-series-title">Series. {{ page.series | regex_replace: '^[A-z0-9]+-', '' }}</h3>
+    <div>
+    <ol>
+      {%- for post in site.posts -%}
+        {%- if post.series == page.series -%}
+          <li>
+            {%- if post.url == page.url -%}
+              <span class="post-series-view">{{ post.title }} - {{ post.date | date: date_format }}</span>
+            {% else %}
+              <a href="{{ post.url }}">{{ post.title }} - {{ post.date | date: date_format }}</a>
+            {%- endif -%}
+          </li>
+        {%- endif -%}
+      {%- endfor -%}
+    </ol>
+    </div>
+  </div>
+  {%- endif -%}
   <div class="post">
     {{ content }}
+  </div>
+  <div class="post-tag">
+  {%- for tag in page.tags -%}
+  {%- if tag contains 'series-' -%}
+  {% else %}
+    <span class="tag_title">#{{ tag }}</span>
+  {%- endif -%}
+  {%- endfor -%}
+  </div>
+  <div class="comment" id="comment">
+    <script type="text/javascript">
+      let s = document.createElement( 'script' );
+      s.setAttribute('src', 'https://utteranc.es/client.js');
+      s.setAttribute('repo', 'decorus-kazuma/decorus-kazuma.github.io');
+      s.setAttribute('theme', `github-${getCookie("theme")}`);
+      s.setAttribute('crossorigin', '"anonymous"');
+      s.setAttribute('async', '')
+      s.setAttribute('issue-term', 'url');
+      document.getElementById('comment').appendChild(s);
+    </script>
   </div>
   {%- if site.plainwhite.disqus_shortname -%}
   <div id="disqus_thread" style="margin-top:25px"></div>

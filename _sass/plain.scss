@@ -14,6 +14,10 @@ $leftWidth: 220px;
   box-sizing: border-box;
 }
 
+.utterances {
+  max-width: 100% !important;
+}
+
 body {
   font-family: "Raleway", sans-serif;
   font-size: 16px;
@@ -196,7 +200,7 @@ main {
     @media screen and (max-width: $mobileW) {
       margin-top: 5px;
     }
-    margin-right: 10px;
+    margin-left: 10px;
   }
 }
 .post-date {
@@ -295,6 +299,65 @@ table {
     font-family: Raleway;
   }
 }
+.post-series {
+  font-family: "Merriweather", sans-serif;
+  font-weight: 300;
+  color: #222;
+  line-height: 1.9em;
+  p {
+    margin-top: 10px;
+  }
+  a {
+    color: $linkColor;
+    text-decoration: none;
+    transition: border-bottom 0.4s;
+    &:hover {
+      border-bottom: 0.5px solid $linkColor;
+    }
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: Raleway, sans-serif;
+  }
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: .5rem;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.06) 0px 0px 4px 0px;
+  border: 1px solid #e2e2e2;
+  position: relative;
+  ol {
+    counter-reset: item 0;
+  }
+  li {
+    content: counter(item) ". ";
+    counter-increment: item 1;
+  }
+  a {
+    font-weight: 400;
+  }
+  .post-series-title {
+    margin-left: 1rem;
+  }
+  .post-series-view {
+    font-weight: 700;
+    color: #616161;
+    font-style: italic;
+  }
+}
+.tag_title {
+  padding: 0.2rem;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  color: #474747;
+}
 
 footer {
   display: none;
@@ -333,4 +396,9 @@ footer {
     }
     border-top: 1px solid #eee;
   }
+}
+
+.about-profile-image {
+  overflow: hidden;
+  border-radius: 70%;
 }
