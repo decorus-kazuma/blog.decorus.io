@@ -6,7 +6,10 @@ categories:
 - Algorithm
 - Leetcode
 - Two Pointer
+series: Leetcode Algorithm - Two Pointer & Sliding Window
+series_id: bcdf5b3 
 tags:
+- series-bcdf5b3-Leetcode-Two-Pointer-Sliding-Window
 - Algorithm
 - Leetcode
 - Two Pointer
