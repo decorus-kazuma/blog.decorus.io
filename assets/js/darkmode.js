@@ -16,7 +16,7 @@ function toggleDarkMode() {
     s.setAttribute('theme', `github-${getCookie("theme")}`);
     s.setAttribute('crossorigin', '"anonymous"');
     s.setAttribute('async', '')
-    s.setAttribute('issue-term', 'url');
+    s.setAttribute('issue-term', 'pathname');
     document.getElementById('comment').innerHTML = '';
     document.getElementById('comment').appendChild(s);
 }

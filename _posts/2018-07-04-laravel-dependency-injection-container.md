@@ -7,7 +7,8 @@ categories:
 - PHP
 - Dependency Injection
 - Inversion of Control 
-series: 7271ae6-Laravel in Depth
+series: Laravel in Depth
+series_id: 7271ae6
 tags:
 - series-7271ae6-Laravel_in_Depth
 - Laravel

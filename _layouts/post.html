@@ -18,12 +18,12 @@ layout: default
     {%- endif -%}
   </div>
   {%- if page.series -%}
-  <div class="post-series">
+  <div class="post-series" data-series-id="{{ page.series_id }}">
     <h3 class="post-series-title">Series. {{ page.series | regex_replace: '^[A-z0-9]+-', '' }}</h3>
     <div>
     <ol>
       {%- for post in site.posts -%}
-        {%- if post.series == page.series -%}
+        {%- if post.series_id == page.series_id -%}
           <li>
             {%- if post.url == page.url -%}
               <span class="post-series-view">{{ post.title }} - {{ post.date | date: date_format }}</span>
@@ -56,7 +56,7 @@ layout: default
       s.setAttribute('theme', `github-${getCookie("theme")}`);
       s.setAttribute('crossorigin', '"anonymous"');
       s.setAttribute('async', '')
-      s.setAttribute('issue-term', 'url');
+      s.setAttribute('issue-term', 'pathname');
       document.getElementById('comment').appendChild(s);
     </script>
   </div>
