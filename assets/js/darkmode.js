@@ -17,7 +17,7 @@ function toggleDarkMode() {
     s.setAttribute('crossorigin', '"anonymous"');
     s.setAttribute('async', '')
     s.setAttribute('issue-term', 'pathname');
-    if (document.getElementById('comment') !== null) {
+    if (document.getElementById('comment') !== undefined) {
         document.getElementById('comment').innerHTML = '';
         document.getElementById('comment').appendChild(s);
     }
