@@ -5,8 +5,6 @@ description: "Laravel Framework 의 근간인 Dependency Injection 을 담당하
 date: 2018-07-04 17:55:00 0900
 categories:
 - PHP
-- Dependency Injection
-- Inversion of Control 
 series: Laravel in Depth
 series_id: 7271ae6
 tags:
@@ -16,7 +14,7 @@ tags:
 - Dependency Injection
 - Inversion of Control
 ---
-[Laravel](https://laravel.kr/) 의 제어의 역전(Inversion of Control) / 의존성 주입 (Dependency Injection) 컨테이너는 매우 강력한 기능입니다. 안타깝게도, 라라벨의 [공식 문서](https://laravel.kr/docs/5.6/)는 이 기능의 모든 면을 설명하고 있지 않습니다. 그런 이유로 저는 직접 이 기능들을 실험하여 본 문서를 작성했습니다. 이 문서는 [Laravel 5.4.26](https://github.com/laravel/framework/tree/5.4/src/Illuminate/Container) 버전을 기준으로 작성되었으며, 그 외 버전은 기능이 다를 수 있습니다. **이 문서는 번역되었습니다.**
+[Laravel](https://laravel.kr/) 의 제어의 역전(Inversion of Control) / 의존성 주입 (Dependency Injection) 컨테이너는 매우 강력한 기능입니다. 안타깝게도, 라라벨의 [공식 문서](https://laravel.kr/docs/5.6/)는 이 기능의 모든 면을 설명하고 있지 않습니다. 그런 이유로 저는 직접 이 기능들을 실험하여 본 문서를 작성했습니다. 이 문서는 [Laravel 5.4.26](https://github.com/laravel/framework/tree/5.4/src/Illuminate/Container) 버전을 기준으로 작성되었으며, 그 외 버전은 기능이 다를 수 있습니다. **이 문서는 번역되었습니다.** _번역한 문서는 [이곳](https://gist.github.com/davejamesmiller/bd857d9b0ac895df7604dd2e63b23afe)을 클릭하시면 이동하실 수 있습니다._
 
 
 ## 의존성 주입이란
@@ -885,6 +883,5 @@ _**Note:** 마지막 부분의 메소드들은 [컨테이너 인터페이스](ht
 ---
 
 - 이 문서의 원본은 2017년 06월 15일에 DaveJamesMiller.com 에서 포스팅되었습니다.
-- 이 문서는 한국어로 번역되었습니다. 번역한 문서는 [이곳](https://gist.github.com/davejamesmiller/bd857d9b0ac895df7604dd2e63b23afe)을 클릭하시면 이동하실 수 있습니다.
 - 이 문서는 원작자의 허가를 받아 번역되었습니다. Dave <[dave@davejamesmiller.com](mailto:dave%40davejamesmiller.com)>. 감사합니다.
-- 이 문서는 [Yongwoo Lee <<buildrush@naver.com>>](https://github.com/FOKKIA) 가 번역하였습니다.
+- 이 문서는 [Yongwoo Lee <<brightdelusion@gmail.com>>](https://github.com/FOKKIA) 가 번역하였습니다.
