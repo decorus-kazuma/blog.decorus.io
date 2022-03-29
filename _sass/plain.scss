@@ -502,3 +502,9 @@ footer {
   overflow: hidden;
   border-radius: 70%;
 }
+.feed-subscribe {
+  font-size: 10pt;
+  @media screen and (max-width: $mobileW) {
+    display: none;
+  }
+}

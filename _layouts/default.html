@@ -161,6 +161,10 @@
         </p>
       </div>
       {%- endif -%}
+      <div class="feed-subscribe">
+        <use xlink:href="{{ '/assets/minima-social-icons.svg#rss' | relative_url }}"></use>
+        </svg><a href="{{ " /feed.xml" | relative_url }}">Subscribe</a>
+      </div>
       {% endcapture %}
       {{ footer }}
     </section>
@@ -190,5 +194,4 @@
   <script src="{{ "/assets/js/search.js" | relative_url }}"></script>
   {% endif %}
 </body>
-
 </html>
