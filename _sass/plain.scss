@@ -453,7 +453,7 @@ table {
       font-weight: 700;
 
       .easy {
-        color: rgba(0, 184, 163, var(--tw-text-opacity));
+        color: rgba(0, 184, 163);
       }
 
       .medium {
@@ -461,7 +461,7 @@ table {
       }
 
       .hard {
-        color: rgba(255, 55, 95, var(--tw-text-opacity));
+        color: rgba(255, 55, 95);
       }
     }
   }
