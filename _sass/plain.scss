@@ -37,6 +37,7 @@ video {
 a {
   color: #000;
   transition: color 0.3s;
+
   &:hover {
     color: $linkColor;
   }
@@ -44,10 +45,12 @@ a {
 
 h2 {
   margin: 0.7em 0;
+
   @media screen and (max-width: $mobileW) {
     margin: 0.3em 0;
   }
 }
+
 main {
   margin: 0 90px;
   display: flex;
@@ -57,9 +60,11 @@ main {
     margin: 0 auto;
     max-width: 1440px;
   }
+
   @media screen and (max-width: 1280px) {
     margin: 0 75px;
   }
+
   @media screen and (max-width: 1024px) {
     margin: 0 35px;
   }
@@ -68,6 +73,7 @@ main {
     margin: 0 10px;
     flex-direction: column;
   }
+
   @media screen and (max-width: $smallMobileW) {
     margin: 0;
   }
@@ -79,25 +85,31 @@ main {
       width: 100%;
     }
   }
+
   .about {
     display: flex;
     height: 100vh;
     padding-bottom: 15vh;
+
     @media screen and (max-width: $mobileW) {
       height: auto;
       padding: 5vh 30px;
     }
+
     @media screen and (max-width: $smallMobileW) {
       padding: 5vh 20px;
     }
+
     @media screen and (min-width: $mobileW + 1) {
       position: fixed;
       max-width: 280px;
     }
+
     min-width: $leftWidth;
     justify-content: center;
     flex-direction: column;
     align-items: center;
+
     h2 {
       font-size: 22px;
       margin-top: 25px;
@@ -105,6 +117,7 @@ main {
       color: #222222;
       font-weight: normal;
     }
+
     .tagline {
       text-align: center;
       font-size: 22px;
@@ -113,21 +126,26 @@ main {
       white-space: pre-wrap;
       line-height: normal;
     }
+
     img {
       max-width: 150px;
     }
+
     img.dark {
       display: none;
     }
+
     .about-header {
       display: flex;
       flex-direction: column;
+
       .about-title {
         display: flex;
         flex-direction: column;
         align-items: center;
         margin-bottom: 17px;
       }
+
       .about-profile-image {
         @media screen and (max-width: $mobileW) {
           display: none;
@@ -136,20 +154,24 @@ main {
     }
   }
 }
+
 #title {
   a {
     text-decoration: none;
   }
 }
+
 .social {
   list-style-type: none;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+
   a {
     margin-bottom: .5em;
   }
+
   li {
     i {
       font-size: 34px;
@@ -196,6 +218,7 @@ main {
   list-style-type: none;
   margin: 0;
   padding: 0;
+
   li {
     font-size: 14px;
     float: left;
@@ -203,30 +226,37 @@ main {
     padding: 5px 20px;
     border-radius: 2px;
     margin-bottom: 5px;
+
     @media screen and (max-width: $mobileW) {
       margin-top: 5px;
     }
+
     margin-left: 10px;
   }
 }
+
 .post-date {
   margin-right: 10px;
   color: #555;
   min-width: 150px;
 }
+
 .post-meta {
   display: flex;
   justify-content: space-between;
   align-items: center;
   min-height: 30px;
+
   @media screen and (max-width: $mobileW) {
     flex-direction: column;
     align-items: baseline;
+
     .post-date {
       margin: 10px 0;
     }
   }
 }
+
 .post-link {
   text-decoration: none;
 }
@@ -236,38 +266,53 @@ main {
   font-size: 28px;
   margin-bottom: 10px;
 }
+
 .posts,
 .post-container {
   list-style-type: none;
   margin: 45px 30px;
+
   @media screen and (max-width: $smallMobileW) {
     margin-left: 20px;
     margin-right: 20px;
   }
+
   @media screen and (max-width: $mobileW) {
     padding: 0 !important;
     margin-top: 0;
   }
 }
+
 .post-container {
   padding-left: 30px;
 }
+
 .post {
   font-family: "Merriweather", sans-serif;
   font-weight: 300;
   color: #222;
   line-height: 1.9em;
+
+  .h-tag {
+    font-family: "Merriweather", sans-serif;
+    color: #222;
+    font-family: Raleway, sans-serif;
+  }
+
   p {
     margin-top: 10px;
   }
+
   a {
     color: $linkColor;
     text-decoration: none;
     transition: border-bottom 0.4s;
+
     &:hover {
       border-bottom: 0.5px solid $linkColor;
     }
   }
+
   h1,
   h2,
   h3,
@@ -276,6 +321,7 @@ main {
   h6 {
     font-family: Raleway, sans-serif;
   }
+
   img {
     max-width: 600px;
     width: 100%;
@@ -283,11 +329,13 @@ main {
     margin: auto;
     margin-top: 15px;
     margin-bottom: 15px;
-    @media screen and (max-width: $mobileW){
+
+    @media screen and (max-width: $mobileW) {
       max-width: 100%;
     }
   }
 }
+
 .posts-labelgroup {
   margin: 0 0 0.67em 0;
   display: flex;
@@ -306,32 +354,41 @@ main {
   overflow: hidden;
   transition: width 0.1s;
 }
+
 table {
-  th, td {
+
+  th,
+  td {
     padding: 8px 13px;
     border: 1px solid #dfe2e5;
   }
+
   th {
     background-color: #eee;
     font-family: Raleway;
   }
 }
+
 .post-leetcode {
   font-family: "Merriweather", sans-serif;
   font-weight: 300;
   color: #222;
   line-height: 1.9em;
+
   p {
     margin-top: 10px;
   }
+
   a {
     color: $linkColor;
     text-decoration: none;
     transition: border-bottom 0.4s;
+
     &:hover {
       border-bottom: 0.5px solid $linkColor;
     }
   }
+
   h1,
   h2,
   h3,
@@ -340,6 +397,7 @@ table {
   h6 {
     font-family: Raleway, sans-serif;
   }
+
   margin-top: 1rem;
   margin-bottom: 1rem;
   padding: 1rem;
@@ -354,64 +412,81 @@ table {
   display: flex;
   flex-direction: column;
   align-items: left;
+
   .logo {
     display: flex;
     flex: 1;
     max-width: 200px;
+
     @media screen and (max-width: $mobileW) {
       max-width: 150px;
     }
   }
+
   .detail {
     display: flex;
     flex: 1;
     width: 100%;
     margin-top: .5rem;
+
     @media screen and (max-width: $mobileW) {
       font-size: 10pt;
     }
+
     table {
       width: 100%;
+
       th {
         width: 25%;
       }
+
       td {
         font-family: "Raleway", sans-serif;
       }
     }
+
     .name {
       font-weight: 700;
     }
+
     .difficulty {
       font-weight: 700;
+
       .easy {
-        color: rgba(0,184,163,var(--tw-text-opacity));
+        color: rgba(0, 184, 163, var(--tw-text-opacity));
       }
+
       .medium {
         color: rgb(239, 108, 0);
       }
+
       .hard {
-        color: rgba(255,55,95,var(--tw-text-opacity));
+        color: rgba(255, 55, 95, var(--tw-text-opacity));
       }
     }
   }
 }
+
 .post-series {
   font-family: "Merriweather", sans-serif;
   font-weight: 300;
   color: #222;
   line-height: 1.9em;
+
   p {
     margin-top: 10px;
   }
+
   a {
     color: $linkColor;
     text-decoration: none;
     transition: border-bottom 0.4s;
+
     &:hover {
       border-bottom: 0.5px solid $linkColor;
     }
   }
+
   h1,
   h2,
   h3,
@@ -420,6 +495,7 @@ table {
   h6 {
     font-family: Raleway, sans-serif;
   }
+
   margin-top: 1rem;
   margin-bottom: 1rem;
   padding: .5rem;
@@ -430,29 +506,36 @@ table {
   box-shadow: rgba(0, 0, 0, 0.06) 0px 0px 4px 0px;
   border: 1px solid #e2e2e2;
   position: relative;
+
   ol {
     counter-reset: item 0;
   }
+
   li {
     content: counter(item) ". ";
     counter-increment: item 1;
   }
+
   a {
     font-weight: 400;
   }
+
   .post-series-title {
     margin-left: 1rem;
+
     .post-series-title-label {
       text-decoration: underline;
       text-decoration-style: double;
     }
   }
+
   .post-series-view {
     font-weight: 700;
     color: #616161;
     font-style: italic;
   }
 }
+
 .post-tag {
   margin-top: .3rem;
   margin-bottom: .7rem;
@@ -470,41 +553,51 @@ table {
 footer {
   display: none;
 }
+
 @media screen and (max-width: $mobileW) {
   .about {
     .about-footer {
       display: none;
     }
+
     .about-header.condensed {
       align-items: start;
       align-self: start;
+
       .about-title {
         flex-direction: row;
         margin-bottom: 10px;
+
         img {
           max-height: 40px;
         }
+
         h2 {
           margin: 0 10px;
         }
       }
+
       .tagline {
         font-size: 18px;
         margin-bottom: 0px;
       }
     }
+
     .about-footer.condensed {
       display: none;
     }
   }
+
   footer.condensed {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 0 40px;
-    @media screen and (max-width: $smallMobileW){
+
+    @media screen and (max-width: $smallMobileW) {
       margin: 0 20px;
     }
+
     border-top: 1px solid #eee;
   }
 }
@@ -513,8 +606,10 @@ footer {
   overflow: hidden;
   border-radius: 70%;
 }
+
 .feed-subscribe {
   font-size: 10pt;
+
   @media screen and (max-width: $mobileW) {
     display: none;
   }
@@ -523,4 +618,66 @@ footer {
 .highlighter-rouge {
   margin-top: 10px;
   margin-bottom: 5px;
+}
+
+.series-container {
+  max-width: 100%;
+  font-family: "Merriweather", sans-serif;
+  font-weight: 300;
+  color: #222;
+  line-height: 1.9em;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: .5rem;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.06) 0px 0px 4px 0px;
+  border: 1px solid #e2e2e2;
+  position: relative;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: Raleway, sans-serif;
+  }
+
+  .title {
+    margin-left: 1rem;
+    margin-bottom: 10px;
+    text-decoration: underline;
+    text-decoration-style: double;
+  }
+
+  .block {
+    a {
+      color: $linkColor;
+      text-decoration: none;
+      transition: border-bottom 0.4s;
+
+      &:hover {
+        border-bottom: 0.5px solid $linkColor;
+      }
+    }
+
+    ol {
+      counter-reset: item 0;
+    }
+
+    li {
+      content: counter(item) ". ";
+      counter-increment: item 1;
+    }
+
+    .description {
+      font-size: 10pt;
+      font-style: italic;
+      color: #7c7c7c;
+      margin-left: 20px;
+    }
+  }
 }

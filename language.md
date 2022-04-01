@@ -1,0 +1,4 @@
+---
+layout: language
+permalink: /language
+---

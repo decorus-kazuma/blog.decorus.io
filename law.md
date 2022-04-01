@@ -1,0 +1,4 @@
+---
+layout: law
+permalink: /law
+---

@@ -25,12 +25,20 @@ plainwhite:
     - page
     - post
   navigation:
-    - title: Home
+    - title: "🏠 Home"
       url: "/"
-    # - title: Series
-    #   url: "/series"
-    - title: Categories (Tags)
+    - title: "🚀 Series"
+      url: "/series"
+    - title: "🧑🏻‍💻 Engineering"
+      url: "/engineering"
+    - title: "🔤 Language"
+      url: "/language"
+    - title: "⚖️ Law"
+      url: "/law"
+    - title: "🧳 Categories"
       url: "/categories"
+    - title: "🔖 Tags"
+      url: "/tags"
   social_links:
     github: decorus-kazuma
     linkedIn: in/decorus-kazuma
