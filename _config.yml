@@ -13,7 +13,7 @@ sass:
 
 plainwhite:
   name: Kazuma Itou
-  tagline: Backend Developer.
+  tagline: Software Enginner 🇯🇵 and 🇰🇷
   date_format: "%b %-d, %Y"
   analytics_id: "UA-112777515-1"
   sitemap: true
@@ -24,6 +24,12 @@ plainwhite:
   condensed_mobile:
     - page
     - post
+    - home
+    - series
+    - engineering
+    - law
+    - categories
+    - tags
   navigation:
     - title: "🏠 Home"
       url: "/"

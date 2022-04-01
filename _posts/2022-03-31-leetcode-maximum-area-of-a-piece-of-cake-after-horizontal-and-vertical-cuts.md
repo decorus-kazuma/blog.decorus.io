@@ -13,6 +13,8 @@ leetcode:
   name: Maximum Area of a Piece of Cake After Horizontal and Vertical Cuts
   diff: 2
   language: Java
+  tc: $$O(n + \log_n + m + \log_m)$$
+  sc: $$O(1)$$
 ---
 You are given a rectangular cake of size h x w and two arrays of integers horizontalCuts and verticalCuts where:
 
