@@ -104,7 +104,9 @@ layout: default
   </div>
   {%- endif -%}
   <div class="post">
+    {%- if page.leetcode -%}
     <h2>Problem,</h2>
+    {%- endif -%}
     {{ content }}
   </div>
   <div class="post-tag">
