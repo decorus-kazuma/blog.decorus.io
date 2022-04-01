@@ -276,6 +276,17 @@ main {
   h6 {
     font-family: Raleway, sans-serif;
   }
+  img {
+    max-width: 600px;
+    width: 100%;
+    display: block;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    @media screen and (max-width: $mobileW){
+      max-width: 100%;
+    }
+  }
 }
 .posts-labelgroup {
   margin: 0 0 0.67em 0;
@@ -507,4 +518,9 @@ footer {
   @media screen and (max-width: $mobileW) {
     display: none;
   }
+}
+
+.highlighter-rouge {
+  margin-top: 10px;
+  margin-bottom: 5px;
 }

@@ -78,12 +78,33 @@ layout: default
               {{ page.leetcode.language }}
             </td>
           </tr>
+          {%- if page.leetcode.tc -%}
+          <tr>
+            <th>
+              Time complexity
+            </th>
+            <td>
+              {{ page.leetcode.tc }}
+            </td>
+          </tr>
+          {%- endif -%}
+          {%- if page.leetcode.sc -%}
+          <tr>
+            <th>
+              Space complexity
+            </th>
+            <td>
+              {{ page.leetcode.sc }}
+            </td>
+          </tr>
+          {%- endif -%}
         </tbody>
       </table>
     </div>
   </div>
   {%- endif -%}
   <div class="post">
+    <h2>Problem,</h2>
     {{ content }}
   </div>
   <div class="post-tag">
@@ -124,3 +145,5 @@ layout: default
       powered by Disqus.</a></noscript>
   {%- endif -%}
 </div>
+
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
