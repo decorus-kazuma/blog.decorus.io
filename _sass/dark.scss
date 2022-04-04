@@ -17,6 +17,12 @@
 	.post p {
 		color: #ddd;
 	}
+	
+	.post {
+		.h-tag {
+			color: $dark_text_color;
+		}
+	}
 
 	.social [class^="icon-"] {
 		color: $dark_text_color
