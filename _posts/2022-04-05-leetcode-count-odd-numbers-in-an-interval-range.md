@@ -11,7 +11,7 @@ tags:
 leetcode:
   id: count-odd-numbers-in-an-interval-range
   name: Count Odd Numbers in an Interval Range
-  diff: 2
+  diff: 1
   language: Java
   tc: $$O(1)$$
   sc: $$O(1)$$
