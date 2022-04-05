@@ -40,6 +40,8 @@ Explanation: Minimum salary and maximum salary are 1000 and 3000 respectively.
 Average salary excluding minimum and maximum salary is (2000) / 1 = 2000
 ```
 
+
+
 ## Solution,
 
 첨에는 딱 중간 값만 뽑으면 TC가 $$O(n \log_n)$$ 이라서 개꿀 이랬는데 음~ 문제 읽고 바로 나의 착각이란걸 알았죠~

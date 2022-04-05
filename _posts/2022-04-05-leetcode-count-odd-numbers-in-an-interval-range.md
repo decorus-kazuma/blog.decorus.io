@@ -35,6 +35,8 @@ Output: 1
 Explanation: The odd numbers between 8 and 10 are [9].
 ```
 
+
+
  ## Solution,
 
 생각하지 않고 풀었다.
